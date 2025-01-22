@@ -8,8 +8,21 @@ body{
     line-height: inherit;
     background-size: 100%;
     font-family: Arial, sans-serif;
-    background-color: rgb(10, 212, 145);
+    background-color: rgb(234 249 249);
     
+}
+.x{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.xbtn{
+    width: 3%;
+    background: transparent;
+    border: transparent;
+}
+.x :hover{
+ color: #e94560;
 }
 .max-width{
     max-width: 23rem;
@@ -21,7 +34,7 @@ body{
 
 .container {
     display:grid;
-    background-color: aqua;
+    background-color: #e5e4e7;
     justify-items: center;
     justify-content: center;
     align-items: center;
@@ -42,14 +55,14 @@ body{
     margin: 10px 0px;
     padding: 10px;
     border-radius: 5px;
-    background: #93ffa2;
+    background: #b9b9b9;
 }
 .btn{
     margin-bottom: 2rem;
     display: flex;
     width: 25%;
     padding: 10px;
-    background-color: #e94560;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 5px;
