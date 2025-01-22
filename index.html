@@ -13,11 +13,26 @@
     </header>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="/MOCK-TEST-/login.html" class="login-button" >Login</a>
-    </nav>
+        <a href="#" class="login-button"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Test Quiz Home Page</h1>
+    </header>
 
+    <nav>
+        <a href="#" class="login-button">Home</a>
+        <a href="#popup" class="login-button" onclick="openLoginPopup()">test</a>
+        <a href="/login.html" class="login-button"  >Login</a>
+    </nav>
+ 
     <div class="container" id="leaderboard-section">
         <div class="leaderboard">
             <h2>Leaderboard</h2>
@@ -32,19 +47,122 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Alice</td>
-                        <td>98</td>
+                        <td>Devkishan</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Bob</td>
-                        <td>85</td>
+                        <td>Kuldevi</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Charlie</td>
-                        <td>78</td>
+                        <td>Hawsi dudi</td>
+                        <td>0</td>
+                    </tr><tr>
+                        <td>4</td>
+                        <td>Broker tak</td>
+                        <td>0</td>
+                    </tr><tr>
+                        <td>4</td>
+                        <td>Choco Himanshu</td>
+                        <td>0</td>
+                    </tr><tr>
+                        <td>5</td>
+                        <td>Padhaku</td>
+                        <td>0</td>
+                    </tr><tr>
+                        <td>6</td>
+                        <td>Hidden Khushal</td>
+                        <td>0</td>
                     </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Guest</td>
+                    <td>0</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <p style="text-align: center;">Compete with your friends and rise to the top of the leaderboard!</p>
+    </div>
+
+    <div class="popup-overlay" id="login-popup" >
+        <div class="popup" style="background-color: #632c2c;">
+            <span class="popup-close" onclick="closeLoginPopup()">&times;</span>
+            <a href="login.html" style="text-decoration: none;"><h2>You need to login</h2></a>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 GATE Competition Platform</p>
+    </footer>
+
+    <script>
+        function openLoginPopup() {
+            document.getElementById('login-popup').style.display = 'flex';
+        }
+
+        function closeLoginPopup() {
+            document.getElementById('login-popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+Home</a>
+        <a href="#popup" class="login-button" onclick="openLoginPopup()">test</a>
+        <a href="/login.html" class="login-button"  >Login</a>
+    </nav>
+
+     <div class="container" id="leaderboard-section">
+        <div class="leaderboard">
+            <h2>Leaderboard</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Devkishan</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kuldevi</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Hawsi dudi</td>
+                        <td>0</td>
+                    </tr><tr>
+                        <td>4</td>
+                        <td>Broker tak</td>
+                        <td>0</td>
+                    </tr><tr>
+                        <td>4</td>
+                        <td>Choco Himanshu</td>
+                        <td>0</td>
+                    </tr><tr>
+                        <td>5</td>
+                        <td>Padhaku</td>
+                        <td>0</td>
+                    </tr><tr>
+                        <td>6</td>
+                        <td>Hidden Khushal</td>
+                        <td>0</td>
+                    </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Guest</td>
+                    <td>0</td>
+                </tr>
                 </tbody>
             </table>
         </div>
