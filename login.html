@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT Login</title>
+    <link rel="stylesheet" href="/login_style.css">
+</head>
+<body>
+    <div class="container max-width max-auto" >
+        <div class="Main_box "> <h1>Welcome</h1></div>
+        <form id="login-form" onsubmit="validateLogin(event)">
+           <div class="box">
+               <label for="username">Username</label>
+               <input class="inpt" id="username" type="text" placeholder="Username" required>
+            </div>
+            <div class="box">
+                <label for="password">Password</label>
+                <input class="inpt"id="password" type="password"  placeholder="Password" required>
+            </div>
+            <div >
+                <Button class="btn" type="submit">Login</Button>
+            </div>
+        </form>
+    </div>
+    <script>
+        // Object to store valid username-password pairs
+        const validCredentials = {
+            "Devkishan": "kishan",
+            "Kuldeep": "hero",
+            "Hawsi dudi": "dudi",
+            "Broker tak": "tak",
+            "Choco Himanshu": "boy",
+            "Padhaku": "rocky",
+            "Hidden Khushal": "chup",
+            "Guest": "guest"
+        };
+
+        // Function to validate login
+        function validateLogin(event) {
+            event.preventDefault(); // Prevent form submission
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (validCredentials[username] === password) {
+                alert("Login successful!");
+                window.location.href = "/home.html"; // Redirect to dashboard or desired page
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
+

@@ -3,110 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GATE Competition</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-            color: white;
-        }
-        header {
-            background-color: #0f3460;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            color: #e94560;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #16213e;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #e94560;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2rem;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #ffffff;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-        }
-        .leaderboard {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .leaderboard h2 {
-            margin-bottom: 10px;
-            color: #e94560;
-        }
-        .leaderboard table {
-            width: 100%;
-            border-collapse: collapse;
-            color: white;
-        }
-        .leaderboard th, .leaderboard td {
-            border: 1px solid #e94560;
-            padding: 10px;
-            text-align: center;
-        }
-        .leaderboard th {
-            background-color: #0f3460;
-        }
-        .login-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #e94560;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .login-button:hover {
-            background-color: #ff6363;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #0f3460;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        footer p {
-            margin: 0;
-            color: #e94560;
-        }
-    </style>
+    <title>Test Quiz</title>
+    <link rel="stylesheet" href="/style/style.css">
+    
 </head>
 <body>
     <header>
-        <h1>GATE Competition</h1>
+        <h1>Test Quiz Home Page</h1>
     </header>
 
     <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
-        <a href="#" class="login-button">Login</a>
+        <a href="/login.html" class="login-button" >Login</a>
     </nav>
 
-    <div class="container">
+    <div class="container" id="leaderboard-section">
         <div class="leaderboard">
             <h2>Leaderboard</h2>
             <table>
@@ -139,8 +51,22 @@
         <p style="text-align: center;">Compete with your friends and rise to the top of the leaderboard!</p>
     </div>
 
+    <div class="popup-overlay" id="login-popup">
+        <div class="popup">
+            <span class="popup-close" onclick="closeLoginPopup()">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2025 GATE Competition Platform</p>
     </footer>
+
+  
 </body>
 </html>
